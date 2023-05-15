@@ -18,5 +18,9 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
+  },
+  "dependencies": {
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4"
   }
 }
