@@ -1,0 +1,26 @@
+[
+    {
+        "name": "The College Dropout",
+        "songs": ["Intro", "We Dont Care", "Graduation Day", "All Falls Down", "Ill Fly Away", "Spaceship", "Jesus Walks", "Never Let Me Down", "Through The Wire"]
+    },
+
+    {
+        "name": "Cracked Rear View",
+        "songs": ["Drowning", "Not Even The Trees", "Hold My Hand", "Hannah Jane", "Look Away", "Let Her Cry"]
+    },
+
+    {
+        "name": "True",
+        "songs": ["Heart Upon My Sleeve", "Shame On Me", "You Make Me", "Addicted To You", "Lay Me Down", "Wake Me Up", "Dear Boy", "Hey Brother"]
+    },
+
+    {
+        "name": "Blond",
+        "songs": ["White Ferrari", "Godspeed", "Nikes", "Futura Free", "Ivy", "Facebook Story", "Pretty Sweet", "Seigfreid", "Skyline To"]
+    },
+
+    {
+        "name": "Consumers Park",
+        "songs": ["Style Wars", "Thoro Hall", "Class Pictures", "A Pause For Peace", "No Dice", "The Evening", "Peaceful", "Riis Beach"]
+    }
+]

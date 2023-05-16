@@ -12,7 +12,7 @@ const songSchema = new Schema({
   },
 
   artist: {
-    type: Artist,
+    type: String,
     required: true,
   },
 
@@ -21,7 +21,7 @@ const songSchema = new Schema({
   },
 
   duration: {
-    type: Integer,
+    type: Number,
   },
 
 });
