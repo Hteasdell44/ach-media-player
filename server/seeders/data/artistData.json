@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Kanye West",
+        "albums": ["The College Dropout", "Late Registration", "Graduation", "808s and HeartBreak", "MBDTF"]
+    },
+
+    {
+        "name": "Hootie And The Blowfish",
+        "albums": ["Cracked Rear View", "Musical Chairs", "Imperfect Circle", "Live In Charleston"]
+    },
+
+    {
+        "name": "Avicii",
+        "albums": ["True", "Tim", "Stories", "Live A Life You Will Remember"]
+    },
+
+    {
+        "name": "Frank Ocean",
+        "albums": ["Blond", "Nostalgia, Ultra", "Channel Orange"]
+    },
+
+    {
+        "name": "Chuck Strangers",
+        "albums": ["Consumers Park", "Too Afraid To Dance", "The Boys And Girls"]
+    }
+]

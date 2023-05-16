@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Intro",
+        "album": "The College Dropout",
+        "artist": "Kanye West",
+        "genre": "Hip Hop",
+        "duration": 19
+    },
+
+    {
+        "name": "Drowning",
+        "album": "Cracked Rear View",
+        "artist": "Hootie And The Blowfish",
+        "genre": "Rock",
+        "duration": 302
+    },
+
+    {
+        "name": "Heart Upon My Sleeve",
+        "album": "True",
+        "artist": "Avicii",
+        "genre": "Electronic",
+        "duration": 283
+    },
+
+    {
+        "name": "White Ferrari",
+        "album": "Blond",
+        "artist": "Frank Ocean",
+        "genre": "Rhythm And Blues",
+        "duration": 249
+    },
+
+    {
+        "name": "Style Wars",
+        "album": "Consumers Park",
+        "artist": "Chuck Strangers",
+        "genre": "Hip Hop",
+        "duration": 237
+    }
+]

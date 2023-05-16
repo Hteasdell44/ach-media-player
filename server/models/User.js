@@ -18,10 +18,10 @@ const userSchema = new Schema({
   favoriteSongs: [
 
     {
-        type: Song,
-    }
+      type: String,
+    },
 
-  ]
+  ],
 
 });
 

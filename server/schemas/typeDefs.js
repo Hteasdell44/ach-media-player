@@ -1,32 +1,44 @@
 const { gql } = require('apollo-server-express');
 
-// GraphQL Queries Go Here
-
 const typeDefs = gql`
-type Thought {
-  _id: ID
-  thoughtText: String
-  thoughtAuthor: String
-  createdAt: String
-  comments: [Comment]!
+type User {
+  _id: ID!
+  email: String!
+  password: String!
+  favoriteSongs: [String]
 }
 
-type Comment {
-  _id: ID
-  commentText: String
-  createdAt: String
+type Song {
+  _id: ID!
+  name: String!
+  album: String
+  artist: String!
+  genre: String
+  duration: Int
+}
+
+type Artist {
+  name: String!
+  albums: [String]
+}
+
+type Album {
+  name: String!
+  songs: [String]
 }
 
 type Query {
-  thoughts: [Thought]!
-  thought(thoughtId: ID!): Thought
+  allUsers: [User]
+  allSongs: [Song]
+  allArtists: [Artist]
+  allAlbums: [Album]
 }
 
 type Mutation {
-  addThought(thoughtText: String!, thoughtAuthor: String!): Thought
-  addComment(thoughtId: ID!, commentText: String!): Thought
-  removeThought(thoughtId: ID!): Thought
-  removeComment(thoughtId: ID!, commentId: ID!): Thought
+  createUser(email: String!, password: String!): User
+  createSong(name: String!, album: String, artist: String!, genre: String, duration: Int): Song
+  createArtist(name: String!, albums: [String]): Artist
+  createAlbum(name: String!, songs: [String]): Album
 }
 `;
 
