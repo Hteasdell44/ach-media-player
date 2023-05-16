@@ -3,9 +3,9 @@ import { Embed as SemanticUIEmbed } from 'semantic-ui-react';
 
 const EmbedComponent = ({ id, placeholder, source }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div style={{ float: 'left', marginLeft: "700px", width: "650px" }}>
       <SemanticUIEmbed
-        style={{ width: '300px', height: '300px', paddingTop: 0, paddingBottom: 0 }}
+        style={{ width: "500px", height: "300px", paddingTop: 0, paddingBottom: 0 }}
         id={id}
         placeholder={placeholder}
         source={source}

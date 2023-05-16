@@ -1,37 +1,24 @@
 import React from "react";
 import HeaderExampleUsersIcon from './components/Header';
+import ListExampleLink from "./components/List";
 import Container from "./components/Container";
 import EmbedComponent from "./components/Embed";
 import { Grid, Image, Rail, Segment } from "semantic-ui-react";
+import MenuExampleSubMenu from "./components/Menu";
 import "./App.css";
 import "./index.css";
-
-// // HEADER COMPONENT
-// // const HeaderExampleUsersIcon = () => (
-//   <div className="header-container">
-//     <Header as='h2' icon textAlign='center'>
-//       <Icon name='users' circular />
-//       <Header.Content>Himalaya Player</Header.Content>
-//     </Header>
-//     <HeaderImage
-//       centered
-//       size='large'
-//       src="./assets/images/mountain-stencil.jpg"
-//     />
-//   </div>
-// // );
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Display the header component */}
+      {/* HEADER */}
       <HeaderExampleUsersIcon />
 
-      {/* Rest of your code
-      <Button>Click Here</Button>
-      <Container /> */}
+      {/* MENU */}
+      <MenuExampleSubMenu />
 
-     
+    
      {/* EMBED */}
      <EmbedComponent
         id="125292332"
@@ -39,6 +26,10 @@ function App() {
         source="vimeo"
       />
 
+     {/* LIST */}
+      <div className="my-container">
+     <ListExampleLink />
+      </div>
 
       {/* GRID RAILS */}
       <Grid centered columns={3}>
