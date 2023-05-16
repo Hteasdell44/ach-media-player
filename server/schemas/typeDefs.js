@@ -29,6 +29,11 @@ type Album {
   songs: [String]
 }
 
+type Auth {
+  token: ID!
+  user: User
+}
+
 type Query {
   allUsers: [User]
   specificUser(userId: ID!): User
@@ -38,9 +43,11 @@ type Query {
   specificArtist(artistId: ID!): Artist
   allAlbums: [Album]
   specificAlbum(albumId: ID!): Album
+  me: User
 }
 
 type Mutation {
+  login(email: String!, password: String!): Auth
   createUser(email: String!, password: String!): User
   updateUser(userId: ID!, email: String!, password: String!): User
   deleteUser(userId: ID!): User
