@@ -45,12 +45,12 @@ function App() {
 
                 <Route 
                   path="/"
-                  element={<Home />}
+                  element={<Login />}
                 />
 
                 <Route
-                  path="/login"
-                  element={<Login />}
+                  path="/home"
+                  element={<Home />}
                 />
 
               </Routes>
