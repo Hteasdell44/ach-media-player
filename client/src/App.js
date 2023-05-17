@@ -11,6 +11,7 @@ import Home from './components/Home'
 import Login from './components/Login'
 import Liked from './components/Liked'
 import SignUp from './components/SignUp'
+import './App.css';
 
 const httpLink = createHttpLink({
   uri: '/graphql',

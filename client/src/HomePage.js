@@ -7,7 +7,7 @@ const HomePage = () => {
       <Grid.Column style={{ maxWidth: 450 }}>
         
         {/* Login */}
-        <Header as='h2' color='teal' textAlign='center'>
+        <Header as='h2' color='purple' textAlign='center'>
           <Image src='/logo.png' /> Log-in to your account
         </Header>
         <Form size='large'>
@@ -21,7 +21,7 @@ const HomePage = () => {
               type='password'
             />
 
-            <Button color='teal' fluid size='large'>
+            <Button color='purple' fluid size='large'>
               Login
             </Button>
           </Segment>

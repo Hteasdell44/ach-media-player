@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Icon, Image as HeaderImage, List, Embed, Grid } from 'semantic-ui-react';
+import { Header, Icon, Image as HeaderImage, List } from 'semantic-ui-react';
 
 const Liked = () => {
   return (

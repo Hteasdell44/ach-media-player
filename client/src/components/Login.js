@@ -1,37 +1,5 @@
-import React, { useState }from 'react';
+import React from 'react';
 import { Button, Form, Grid, Header, Image, Message, Segment, Embed } from 'semantic-ui-react';
-import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../utils/mutation';
-
-import Auth from '../utils/auth';
-
-const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
-
-  // update state based on form input changes
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
-
-  // submit form
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    console.log(formState);
-    try {
-      const { data } = await login({
-        variables: { ...formState },
-      });
-
-      Auth.login(data.login.token);
-    } catch (e) {
-      console.error(e);
-    }
 
     // clear form values
     setFormState({
@@ -45,27 +13,20 @@ const Login = (props) => {
         
         {/* Login */}
         <div>
-          <Header as='h2' color='teal' textAlign='center'>
-            <Image src='/logo.png' /> Log-in to your account
+          <Header as='h2' color='purple' textAlign='center'>
+            Log-in to your account
           </Header>
-          <Form size='large'onSubmit={handleFormSubmit}>
+          <Form size='large'>
             <Segment stacked>
-              <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address'
-               name="email"
-               type="email"
-               value={formState.email} 
-               onChange={handleChange}
-              />
-              
+              <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
               <Form.Input
                 fluid
                 icon='lock'
                 iconPosition='left'
                 placeholder='Password'
                 type='password'
-                onChange={handleChange}
               />
-              <Button color='teal' fluid size='large'  type="submit">
+              <Button color='teal' fluid size='large'>
                 Login
               </Button>
             </Segment>
@@ -77,14 +38,12 @@ const Login = (props) => {
 
         {/* Embed */}
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-          <Grid.Column>
-            <Embed
-              style={{ width: '600px', height: '400px', paddingTop: 0, paddingBottom: 0 }}
-              url={'url'}
-              placeholder={'placeholder'}
-              source={'source'}
-            />
-          </Grid.Column>
+          <Embed
+            style={{ width: '600px', height: '400px', paddingTop: 0, paddingBottom: 0 }}
+            url={'https://www.youtube.com/watch?v=dQw4w9WgXcQ'} // Use a dynamic URL here
+            placeholder={'http://placekitten.com/600/400'} // Use a dynamic placeholder here
+            source={'youtube'} // Use a dynamic source here
+          />
         </div>
       </Grid.Column>
     </Grid>
