@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, Grid, Header, Image, Message, Segment, Embed } from 'semantic-ui-react';
+import { Button, Form, Grid, Header, Message, Segment, Embed } from 'semantic-ui-react';
 
 const Login = () => {
   return (
@@ -8,39 +8,48 @@ const Login = () => {
         
         {/* Login */}
         <div>
-          <Header as='h2' color='teal' textAlign='center'>
-            <Image src='/logo.png' /> Log-in to your account
+          <Header as='h2' color='purple' textAlign='center'>
+            Log-in to your account
           </Header>
           <Form size='large'>
-            <Segment stacked>
-              <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-              <Form.Input
-                fluid
-                icon='lock'
-                iconPosition='left'
-                placeholder='Password'
-                type='password'
-              />
-              <Button color='teal' fluid size='large'>
-                Login
-              </Button>
-            </Segment>
+          <div
+              style={{
+                background: 'linear-gradient(to bottom right, lightgreen, lightblue)', // Add the gradient here
+                padding: '1em',
+              }}
+            >
+              <Segment stacked>
+                <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
+                <Form.Input
+                  fluid
+                  icon='lock'
+                  iconPosition='left'
+                  placeholder='Password'
+                  type='password'
+                />
+                <Button color='purple' fluid size='large'>
+                  Login
+                </Button>
+              </Segment>
+              <Segment
+                style={{ backgroundColor: 'lightgray', marginTop: '1em' }} // Set the background color here
+              >
+                <Message>
+                  New to us? <a href='#'>Sign Up</a>
+                </Message>
+              </Segment>
+            </div>
           </Form>
-          <Message>
-            New to us? <a href='#'>Sign Up</a>
-          </Message>
         </div>
 
         {/* Embed */}
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-          <Grid.Column>
-            <Embed
-              style={{ width: '600px', height: '400px', paddingTop: 0, paddingBottom: 0 }}
-              url={'url'}
-              placeholder={'placeholder'}
-              source={'source'}
-            />
-          </Grid.Column>
+          <Embed
+            style={{ width: '600px', height: '400px', paddingTop: 0, paddingBottom: 0 }}
+            url={'https://www.youtube.com/watch?v=dQw4w9WgXcQ'} // Use a dynamic URL here
+            placeholder={'http://placekitten.com/600/400'} // Use a dynamic placeholder here
+            source={'youtube'} // Use a dynamic source here
+          />
         </div>
       </Grid.Column>
     </Grid>
