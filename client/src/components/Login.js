@@ -1,7 +1,12 @@
 import React from 'react';
-import { Button, Form, Grid, Header, Message, Segment, Embed } from 'semantic-ui-react';
+import { Button, Form, Grid, Header, Image, Message, Segment, Embed } from 'semantic-ui-react';
 
-const Login = () => {
+    // clear form values
+    setFormState({
+      email: '',
+      password: '',
+    });
+  };
   return (
     <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
       <Grid.Column style={{ maxWidth: 650 }}>
@@ -12,34 +17,23 @@ const Login = () => {
             Log-in to your account
           </Header>
           <Form size='large'>
-          <div
-              style={{
-                background: 'linear-gradient(to bottom right, lightgreen, lightblue)', // Add the gradient here
-                padding: '1em',
-              }}
-            >
-              <Segment stacked>
-                <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
-                <Form.Input
-                  fluid
-                  icon='lock'
-                  iconPosition='left'
-                  placeholder='Password'
-                  type='password'
-                />
-                <Button color='purple' fluid size='large'>
-                  Login
-                </Button>
-              </Segment>
-              <Segment
-                style={{ backgroundColor: 'lightgray', marginTop: '1em' }} // Set the background color here
-              >
-                <Message>
-                  New to us? <a href='#'>Sign Up</a>
-                </Message>
-              </Segment>
-            </div>
+            <Segment stacked>
+              <Form.Input fluid icon='user' iconPosition='left' placeholder='E-mail address' />
+              <Form.Input
+                fluid
+                icon='lock'
+                iconPosition='left'
+                placeholder='Password'
+                type='password'
+              />
+              <Button color='teal' fluid size='large'>
+                Login
+              </Button>
+            </Segment>
           </Form>
+          <Message>
+            New to us? <a href='#'>Sign Up</a>
+          </Message>
         </div>
 
         {/* Embed */}
