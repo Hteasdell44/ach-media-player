@@ -48,7 +48,7 @@ type Query {
 
 type Mutation {
   login(email: String!, password: String!): Auth
-  createUser(email: String!, password: String!): User
+  createUser(email: String!, password: String!): Auth
   updateUser(userId: ID!, email: String!, password: String!): User
   deleteUser(userId: ID!): User
   createSong(name: String!, album: String, artist: String!, genre: String, duration: Int): Song
