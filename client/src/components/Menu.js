@@ -5,7 +5,14 @@ export default class MenuExampleSubMenu extends Component {
   
   state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => {
+    if (name === 'logout') {
+      localStorage.clear(); // Clear user authentication tokens or other relevant data
+      window.location.href = '/'; // Redirect to the login page
+    } else {
+      this.setState({ activeItem: name });
+    }
+  };
 
   render() {
     const { activeItem } = this.state
