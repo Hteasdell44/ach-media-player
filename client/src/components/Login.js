@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Form, Grid, Header, Image, Message, Segment, Embed } from 'semantic-ui-react';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutation';
+import HeaderExampleUsersIcon from './Header';
 
 import Auth from '../utils/auth';
 import { Link } from 'react-router-dom';
@@ -47,8 +48,10 @@ const Login = (props) => {
   
         {/* Login */}
         <div>
+        <HeaderExampleUsersIcon />
+
           <Header as='h2' color='teal' textAlign='center'>
-            <Image src='/logo.png' /> Log-in to your account
+            Log-in to your account
           </Header>
           <Form size='large' onSubmit={handleFormSubmit}>
             <Segment stacked>
@@ -95,17 +98,7 @@ const Login = (props) => {
             )}
         </div>
   
-        {/* Embed */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
-          <Grid.Column>
-            <Embed
-              style={{ width: '600px', height: '400px', paddingTop: 0, paddingBottom: 0 }}
-              placeholder={'placeholder'}
-              source={'source'}
-            />
-          </Grid.Column>
-        </div>
-      </Grid.Column>
+        </Grid.Column>
     </Grid>
   );  
 };

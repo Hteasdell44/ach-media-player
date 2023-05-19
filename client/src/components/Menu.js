@@ -38,14 +38,7 @@ handleItemClick = (e, { name }) => {
                 active={activeItem === 'profile'}
                 onClick={this.handleItemClick}
               >
-                profile
-              </Menu.Item>
-              <Menu.Item
-                name='add songs'
-                active={activeItem === 'add'}
-                onClick={this.handleItemClick}
-              >
-                liked songs
+              
               </Menu.Item>
               <Menu.Item
                 name='liked songs'
