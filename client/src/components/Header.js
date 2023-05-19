@@ -5,7 +5,7 @@ const HeaderExampleUsersIcon = () => (
   <div className="header-container">
     <Header as='h2' icon textAlign='center'>
       <Icon name='area graph' circular />
-      <Header.Content>Himalaya Player</Header.Content>
+      <Header.Content>ACH Music Player</Header.Content>
     </Header>
     <HeaderImage
       centered
