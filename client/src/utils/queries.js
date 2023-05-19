@@ -19,6 +19,7 @@ export const ALL_SONGS = gql`
         artist
         duration
         genre
+        mp3Link
         }
     }
 `;
