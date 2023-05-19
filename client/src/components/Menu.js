@@ -5,7 +5,20 @@ export default class MenuExampleSubMenu extends Component {
   
   state = {}
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+handleItemClick = (e, { name }) => {
+    if (name === 'logout') {
+      localStorage.clear(); // Clear user authentication tokens or other relevant data
+      window.location.href = '/'; // Redirect to the login page
+    } else {
+      this.setState({ activeItem: name });
+
+      // Handle additional menu item clicks
+      if (name === 'liked') {
+        // Redirect to the liked songs page or perform the desired action
+        window.location.href = '/liked'; // Example: Redirect to the liked songs page
+      }
+    }
+  };
 
   render() {
     const { activeItem } = this.state
@@ -28,7 +41,7 @@ export default class MenuExampleSubMenu extends Component {
                 profile
               </Menu.Item>
               <Menu.Item
-                name='liked songs'
+                name='add songs'
                 active={activeItem === 'add'}
                 onClick={this.handleItemClick}
               >
@@ -36,7 +49,7 @@ export default class MenuExampleSubMenu extends Component {
               </Menu.Item>
               <Menu.Item
                 name='liked songs'
-                active={activeItem === 'about'}
+                active={activeItem === 'liked'}
                 onClick={this.handleItemClick}
               >
               </Menu.Item>
