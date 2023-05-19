@@ -24,6 +24,10 @@ const songSchema = new Schema({
     type: Number,
   },
 
+  mp3Link: {
+    type: String
+  },
+
 });
 
 const Song = model('Song', songSchema);

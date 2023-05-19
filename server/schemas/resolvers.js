@@ -107,7 +107,8 @@ const resolvers = {
           artist: args.artist,
           duration: args.duration,
           genre: args.genre,
-          album: args.album
+          album: args.album,
+          mp3Link: args.mp3Link,
          },
 
         { new: true }
