@@ -71,7 +71,7 @@ const Signup = () => {
         {data ? (
           <p>
             Success! You may now head{' '}
-            <Link to="/">back to the homepage.</Link>
+            <Link to="/home">back to the homepage.</Link>
           </p>
         ) : (
           <>
