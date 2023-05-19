@@ -4,7 +4,8 @@
         "album": "The College Dropout",
         "artist": "Kanye West",
         "genre": "Hip Hop",
-        "duration": 19
+        "duration": 19,
+        "mp3Link": "https://cdns-preview-a.dzcdn.net/stream/c-aaaa5bc88e2123c96ddffa568feb5cc9-4.mp3"
     },
 
     {
@@ -12,7 +13,8 @@
         "album": "Cracked Rear View",
         "artist": "Hootie And The Blowfish",
         "genre": "Rock",
-        "duration": 302
+        "duration": 302,
+        "mp3Link": "https://cdns-preview-d.dzcdn.net/stream/c-d69bec6f1ab4cb790af48392fb7553d5-14.mp3"
     },
 
     {
@@ -20,7 +22,8 @@
         "album": "True",
         "artist": "Avicii",
         "genre": "Electronic",
-        "duration": 283
+        "duration": 283,
+        "mp3Link": "https://cdns-preview-3.dzcdn.net/stream/c-33f2afa9f62b3f473dba05a0d63efabb-7.mp3"
     },
 
     {
@@ -28,7 +31,8 @@
         "album": "Blond",
         "artist": "Frank Ocean",
         "genre": "Rhythm And Blues",
-        "duration": 249
+        "duration": 249,
+        "mp3Link": "https://cdns-preview-c.dzcdn.net/stream/c-c4b36fa8c0d52930d82673587f3691f2-4.mp3"
     },
 
     {
@@ -36,6 +40,7 @@
         "album": "Consumers Park",
         "artist": "Chuck Strangers",
         "genre": "Hip Hop",
-        "duration": 237
+        "duration": 237,
+        "mp3Link": "https://cdns-preview-2.dzcdn.net/stream/c-26659476c8ad49c82ec61c2a1796244d-3.mp3"
     }
 ]

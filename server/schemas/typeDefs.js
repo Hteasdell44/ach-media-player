@@ -15,6 +15,7 @@ type Song {
   artist: String!
   genre: String
   duration: Int
+  mp3Link: String
 }
 
 type Artist {
@@ -52,7 +53,7 @@ type Mutation {
   createUser(email: String!, password: String!): Auth
   updateUser(userId: ID!, email: String!, password: String!): User
   deleteUser(userId: ID!): User
-  createSong(name: String!, album: String, artist: String!, genre: String, duration: Int): Song
+  createSong(name: String!, album: String, artist: String!, genre: String, duration: Int, mp3Link: String): Song
   updateSong(songId:ID!, name: String!, album: String, artist: String!, genre: String, duration: Int): Song
   deleteSong(songId: ID!): Song
   createArtist(name: String!, albums: [String]): Artist
